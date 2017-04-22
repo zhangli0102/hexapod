@@ -1,0 +1,2 @@
+verilog work "src/guanjie.v"
+verilog work "src/hexapod.v"

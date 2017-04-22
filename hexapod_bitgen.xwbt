@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/zhangli/src/fpga/hexapod/hexapod.ncd
+OUTFILE=/home/zhangli/src/fpga/hexapod/hexapod.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=/home/zhangli/src/fpga/hexapod
+LICENSE=WebPack
+USER_INFO=211280914_0_0_371

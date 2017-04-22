@@ -1,0 +1,30 @@
+NET "CLK" LOC = P56;
+NET "rst" LOC = "P120" | PULLDOWN;
+
+NET "servo_en<0>" LOC = P29;
+NET "servo_en<1>" LOC = P27;
+NET "servo_en<2>" LOC = P30;
+
+NET "zu11" LOC = P66;
+NET "zu12" LOC = P58;
+NET "zu13" LOC = P57;
+
+NET "zu21" LOC = P75;
+NET "zu22" LOC = P74;
+NET "zu23" LOC = P67;
+
+NET "zu31" LOC = P33;
+NET "zu32" LOC = P79;
+NET "zu33" LOC = P78;
+
+NET "zu41" LOC = P85;
+NET "zu42" LOC = P87;
+NET "zu43" LOC = P88;
+
+NET "zu51" LOC = P82;
+NET "zu52" LOC = P83;
+NET "zu53" LOC = P84;
+
+NET "zu61" LOC = P50;
+NET "zu62" LOC = P80;
+NET "zu63" LOC = P81;

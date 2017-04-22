@@ -1,0 +1,30 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Apr 22 11:40:57 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "zu32" LOCATE = SITE "P79" LEVEL 1;
+COMP "zu41" LOCATE = SITE "P85" LEVEL 1;
+COMP "zu33" LOCATE = SITE "P78" LEVEL 1;
+COMP "zu42" LOCATE = SITE "P87" LEVEL 1;
+COMP "zu51" LOCATE = SITE "P82" LEVEL 1;
+COMP "zu43" LOCATE = SITE "P88" LEVEL 1;
+COMP "zu52" LOCATE = SITE "P83" LEVEL 1;
+COMP "zu61" LOCATE = SITE "P50" LEVEL 1;
+COMP "zu53" LOCATE = SITE "P84" LEVEL 1;
+COMP "zu62" LOCATE = SITE "P80" LEVEL 1;
+COMP "zu63" LOCATE = SITE "P81" LEVEL 1;
+COMP "servo_en<0>" LOCATE = SITE "P29" LEVEL 1;
+COMP "servo_en<1>" LOCATE = SITE "P27" LEVEL 1;
+COMP "servo_en<2>" LOCATE = SITE "P30" LEVEL 1;
+COMP "CLK" LOCATE = SITE "P56" LEVEL 1;
+COMP "rst" LOCATE = SITE "P120" LEVEL 1;
+COMP "zu11" LOCATE = SITE "P66" LEVEL 1;
+COMP "zu12" LOCATE = SITE "P58" LEVEL 1;
+COMP "zu21" LOCATE = SITE "P75" LEVEL 1;
+COMP "zu13" LOCATE = SITE "P57" LEVEL 1;
+COMP "zu22" LOCATE = SITE "P74" LEVEL 1;
+COMP "zu31" LOCATE = SITE "P33" LEVEL 1;
+COMP "zu23" LOCATE = SITE "P67" LEVEL 1;
+SCHEMATIC END;
+

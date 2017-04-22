@@ -1,0 +1,809 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: hexapod.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "hexapod.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "hexapod"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : hexapod
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/zhangli/src/fpga/hexapod/src/guanjie.v" into library work
+Parsing module <guanjie>.
+Analyzing Verilog file "/home/zhangli/src/fpga/hexapod/src/hexapod.v" into library work
+Parsing module <hexapod>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <hexapod>.
+
+Elaborating module <guanjie>.
+WARNING:HDLCompiler:413 - "/home/zhangli/src/fpga/hexapod/src/guanjie.v" Line 34: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/zhangli/src/fpga/hexapod/src/guanjie.v" Line 38: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/zhangli/src/fpga/hexapod/src/hexapod.v" Line 102: Result of 25-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "/home/zhangli/src/fpga/hexapod/src/hexapod.v" Line 106: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/home/zhangli/src/fpga/hexapod/src/hexapod.v" Line 109: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/zhangli/src/fpga/hexapod/src/hexapod.v" Line 111: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/zhangli/src/fpga/hexapod/src/hexapod.v" Line 115: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/zhangli/src/fpga/hexapod/src/hexapod.v" Line 119: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/zhangli/src/fpga/hexapod/src/hexapod.v" Line 127: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/zhangli/src/fpga/hexapod/src/hexapod.v" Line 128: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/zhangli/src/fpga/hexapod/src/hexapod.v" Line 132: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/zhangli/src/fpga/hexapod/src/hexapod.v" Line 133: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/zhangli/src/fpga/hexapod/src/hexapod.v" Line 142: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/zhangli/src/fpga/hexapod/src/hexapod.v" Line 144: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/zhangli/src/fpga/hexapod/src/hexapod.v" Line 146: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/zhangli/src/fpga/hexapod/src/hexapod.v" Line 148: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/zhangli/src/fpga/hexapod/src/hexapod.v" Line 154: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/zhangli/src/fpga/hexapod/src/hexapod.v" Line 155: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/zhangli/src/fpga/hexapod/src/hexapod.v" Line 160: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/zhangli/src/fpga/hexapod/src/hexapod.v" Line 165: Result of 32-bit expression is truncated to fit in 16-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <hexapod>.
+    Related source file is "/home/zhangli/src/fpga/hexapod/src/hexapod.v".
+    Found 16-bit register for signal <pul_12>.
+    Found 16-bit register for signal <pul_13>.
+    Found 16-bit register for signal <pul_21>.
+    Found 16-bit register for signal <pul_41>.
+    Found 16-bit register for signal <pul_51>.
+    Found 16-bit register for signal <pul_52>.
+    Found 16-bit register for signal <pul_53>.
+    Found 16-bit register for signal <pul_11>.
+    Found 16-bit register for signal <pul_22>.
+    Found 16-bit register for signal <pul_43>.
+    Found 16-bit register for signal <pul_23>.
+    Found 16-bit register for signal <pul_42>.
+    Found 24-bit register for signal <prescaler>.
+    Found 8-bit register for signal <count>.
+    Found 12-bit subtractor for signal <GND_1_o_GND_1_o_sub_8_OUT> created at line 111.
+    Found 12-bit subtractor for signal <GND_1_o_GND_1_o_sub_10_OUT> created at line 115.
+    Found 12-bit subtractor for signal <GND_1_o_GND_1_o_sub_29_OUT> created at line 127.
+    Found 12-bit subtractor for signal <GND_1_o_GND_1_o_sub_30_OUT> created at line 128.
+    Found 12-bit subtractor for signal <GND_1_o_GND_1_o_sub_73_OUT> created at line 155.
+    Found 13-bit subtractor for signal <GND_1_o_GND_1_o_sub_76_OUT> created at line 160.
+    Found 24-bit adder for signal <prescaler[23]_GND_1_o_add_1_OUT> created at line 102.
+    Found 8-bit adder for signal <count[7]_GND_1_o_add_3_OUT> created at line 106.
+    Found 12-bit adder for signal <n0278[1:12]> created at line 110.
+    Found 12-bit adder for signal <n0280[11:0]> created at line 112.
+    Found 12-bit adder for signal <n0282[11:0]> created at line 130.
+    Found 12-bit adder for signal <n0284[11:0]> created at line 143.
+    Found 12-bit adder for signal <n0286[11:0]> created at line 156.
+    Found 12-bit adder for signal <n0288[11:0]> created at line 157.
+    Found 8-bit comparator lessequal for signal <count[7]_GND_1_o_LessThan_5_o> created at line 107
+    Found 8-bit comparator greater for signal <count[7]_GND_1_o_LessThan_27_o> created at line 122
+    Found 8-bit comparator greater for signal <count[7]_GND_1_o_LessThan_49_o> created at line 137
+    Found 8-bit comparator greater for signal <count[7]_GND_1_o_LessThan_71_o> created at line 152
+    Summary:
+	inferred  14 Adder/Subtractor(s).
+	inferred 224 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred  36 Multiplexer(s).
+Unit <hexapod> synthesized.
+
+Synthesizing Unit <guanjie>.
+    Related source file is "/home/zhangli/src/fpga/hexapod/src/guanjie.v".
+        CLK_F = 50
+    Found 16-bit register for signal <count>.
+    Found 1-bit register for signal <CTL>.
+    Found 16-bit register for signal <prescaler>.
+    Found 16-bit adder for signal <prescaler[15]_GND_2_o_add_1_OUT> created at line 34.
+    Found 16-bit adder for signal <count[15]_GND_2_o_add_3_OUT> created at line 38.
+    Found 16-bit comparator greater for signal <count[15]_pul_len[15]_LessThan_5_o> created at line 39
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <guanjie> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 50
+ 12-bit adder                                          : 6
+ 12-bit subtractor                                     : 5
+ 13-bit subtractor                                     : 1
+ 16-bit adder                                          : 36
+ 24-bit adder                                          : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 68
+ 1-bit register                                        : 18
+ 16-bit register                                       : 48
+ 24-bit register                                       : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 22
+ 16-bit comparator greater                             : 18
+ 8-bit comparator greater                              : 3
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 36
+ 16-bit 2-to-1 multiplexer                             : 36
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <guanjie>.
+The following registers are absorbed into counter <prescaler>: 1 register on signal <prescaler>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <guanjie> synthesized (advanced).
+
+Synthesizing (advanced) Unit <hexapod>.
+The following registers are absorbed into counter <prescaler>: 1 register on signal <prescaler>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <hexapod> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 12
+ 12-bit adder                                          : 6
+ 12-bit subtractor                                     : 5
+ 13-bit subtractor                                     : 1
+# Counters                                             : 38
+ 16-bit up counter                                     : 36
+ 24-bit up counter                                     : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 210
+ Flip-Flops                                            : 210
+# Comparators                                          : 22
+ 16-bit comparator greater                             : 18
+ 8-bit comparator greater                              : 3
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 36
+ 16-bit 2-to-1 multiplexer                             : 36
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <hexapod>: instances <y1>, <y3> of unit <guanjie> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <hexapod>: instances <d1>, <d3> of unit <guanjie> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <hexapod>: instances <x1>, <x3> of unit <guanjie> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <hexapod>: instances <y4>, <y6> of unit <guanjie> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <hexapod>: instances <d4>, <d6> of unit <guanjie> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <hexapod>: instances <x4>, <x6> of unit <guanjie> are equivalent, second instance is removed
+WARNING:Xst:1710 - FF/Latch <pul_22_13> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_22_14> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_22_15> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_53_0> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_53_1> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_53_12> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_53_13> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_53_14> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_53_15> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_11_0> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_11_1> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_11_2> (without init value) has a constant value of 1 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_42_0> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_42_1> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_42_12> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_42_13> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_42_14> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_42_15> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_43_0> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_43_1> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_43_12> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_43_13> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_43_14> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_43_15> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_23_0> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_23_1> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_23_12> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_23_13> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_23_14> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_23_15> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_12_0> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_12_1> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_12_12> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_12_13> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_12_14> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_12_15> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_13_0> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_13_1> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_13_12> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_13_13> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_13_14> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_13_15> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_21_0> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_21_1> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_21_2> (without init value) has a constant value of 1 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_52_0> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_52_1> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_52_12> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_52_13> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_52_14> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_52_15> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_41_0> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_41_1> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_41_2> (without init value) has a constant value of 1 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_51_0> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_51_1> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_51_2> (without init value) has a constant value of 1 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_22_0> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_22_1> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_22_12> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <pul_12_2> in Unit <hexapod> is equivalent to the following 3 FFs/Latches, which will be removed : <pul_13_2> <pul_52_2> <pul_53_2> 
+INFO:Xst:2261 - The FF/Latch <pul_41_7> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_11_7> 
+INFO:Xst:2261 - The FF/Latch <pul_42_6> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_23_6> 
+INFO:Xst:2261 - The FF/Latch <pul_12_11> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_53_11> 
+INFO:Xst:2261 - The FF/Latch <pul_13_7> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_52_7> 
+INFO:Xst:2261 - The FF/Latch <pul_13_5> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_52_5> 
+INFO:Xst:2261 - The FF/Latch <pul_41_10> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_11_10> 
+INFO:Xst:2261 - The FF/Latch <pul_12_6> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_53_6> 
+INFO:Xst:2261 - The FF/Latch <pul_22_11> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_43_11> 
+INFO:Xst:2261 - The FF/Latch <pul_42_7> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_23_7> 
+INFO:Xst:2261 - The FF/Latch <pul_41_6> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_11_6> 
+INFO:Xst:2261 - The FF/Latch <pul_21_4> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_51_4> 
+INFO:Xst:2261 - The FF/Latch <pul_42_5> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_23_5> 
+INFO:Xst:2261 - The FF/Latch <pul_41_5> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_11_5> 
+INFO:Xst:2261 - The FF/Latch <pul_41_11> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_11_11> 
+INFO:Xst:2261 - The FF/Latch <pul_13_9> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_52_9> 
+INFO:Xst:2261 - The FF/Latch <pul_13_6> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_52_6> 
+INFO:Xst:2261 - The FF/Latch <pul_41_12> in Unit <hexapod> is equivalent to the following 7 FFs/Latches, which will be removed : <pul_41_13> <pul_41_14> <pul_41_15> <pul_11_12> <pul_11_13> <pul_11_14> <pul_11_15> 
+INFO:Xst:2261 - The FF/Latch <pul_42_9> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_23_9> 
+INFO:Xst:2261 - The FF/Latch <pul_21_5> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_51_5> 
+INFO:Xst:2261 - The FF/Latch <pul_22_9> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_43_9> 
+INFO:Xst:2261 - The FF/Latch <pul_41_9> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_11_9> 
+INFO:Xst:2261 - The FF/Latch <pul_21_8> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_51_8> 
+INFO:Xst:2261 - The FF/Latch <pul_21_9> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_51_9> 
+INFO:Xst:2261 - The FF/Latch <pul_42_4> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_23_4> 
+INFO:Xst:2261 - The FF/Latch <pul_21_10> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_51_10> 
+INFO:Xst:2261 - The FF/Latch <pul_12_4> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_53_4> 
+INFO:Xst:2261 - The FF/Latch <pul_21_11> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_51_11> 
+INFO:Xst:2261 - The FF/Latch <pul_21_12> in Unit <hexapod> is equivalent to the following 7 FFs/Latches, which will be removed : <pul_21_13> <pul_21_14> <pul_21_15> <pul_51_12> <pul_51_13> <pul_51_14> <pul_51_15> 
+INFO:Xst:2261 - The FF/Latch <pul_21_7> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_51_7> 
+INFO:Xst:2261 - The FF/Latch <pul_42_8> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_23_8> 
+INFO:Xst:2261 - The FF/Latch <pul_22_10> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_43_10> 
+INFO:Xst:2261 - The FF/Latch <pul_41_4> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_11_4> 
+INFO:Xst:2261 - The FF/Latch <pul_42_3> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_23_3> 
+INFO:Xst:2261 - The FF/Latch <pul_13_11> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_52_11> 
+INFO:Xst:2261 - The FF/Latch <pul_22_2> in Unit <hexapod> is equivalent to the following 3 FFs/Latches, which will be removed : <pul_42_2> <pul_43_2> <pul_23_2> 
+INFO:Xst:2261 - The FF/Latch <pul_13_4> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_52_4> 
+INFO:Xst:2261 - The FF/Latch <pul_22_3> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_43_3> 
+INFO:Xst:2261 - The FF/Latch <pul_12_10> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_53_10> 
+INFO:Xst:2261 - The FF/Latch <pul_42_10> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_23_10> 
+INFO:Xst:2261 - The FF/Latch <pul_12_5> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_53_5> 
+INFO:Xst:2261 - The FF/Latch <pul_22_4> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_43_4> 
+INFO:Xst:2261 - The FF/Latch <pul_22_5> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_43_5> 
+INFO:Xst:2261 - The FF/Latch <pul_12_8> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_53_8> 
+INFO:Xst:2261 - The FF/Latch <pul_13_10> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_52_10> 
+INFO:Xst:2261 - The FF/Latch <pul_12_3> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_53_3> 
+INFO:Xst:2261 - The FF/Latch <pul_22_7> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_43_7> 
+INFO:Xst:2261 - The FF/Latch <pul_12_9> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_53_9> 
+INFO:Xst:2261 - The FF/Latch <pul_42_11> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_23_11> 
+INFO:Xst:2261 - The FF/Latch <pul_41_8> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_11_8> 
+INFO:Xst:2261 - The FF/Latch <pul_22_8> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_43_8> 
+INFO:Xst:2261 - The FF/Latch <pul_21_6> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_51_6> 
+INFO:Xst:2261 - The FF/Latch <pul_13_8> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_52_8> 
+INFO:Xst:2261 - The FF/Latch <pul_21_3> in Unit <hexapod> is equivalent to the following 3 FFs/Latches, which will be removed : <pul_41_3> <pul_51_3> <pul_11_3> 
+INFO:Xst:2261 - The FF/Latch <pul_13_3> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_52_3> 
+INFO:Xst:2261 - The FF/Latch <pul_22_6> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_43_6> 
+INFO:Xst:2261 - The FF/Latch <pul_12_7> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_53_7> 
+
+Optimizing unit <hexapod> ...
+WARNING:Xst:1710 - FF/Latch <pul_13_11> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pul_21_12> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_22_10> (without init value) has a constant value of 1 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_22_11> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_42_8> (without init value) has a constant value of 1 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_42_9> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_42_10> (without init value) has a constant value of 1 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_42_11> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <pul_41_11> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_41_12> 
+WARNING:Xst:1293 - FF/Latch <x2/prescaler_14> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x2/prescaler_15> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d2/prescaler_6> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d2/prescaler_7> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d2/prescaler_8> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d2/prescaler_9> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d2/prescaler_10> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d2/prescaler_11> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d2/prescaler_12> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d2/prescaler_13> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d2/prescaler_14> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d2/prescaler_15> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y2/prescaler_6> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y2/prescaler_7> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y2/prescaler_8> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y2/prescaler_9> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y2/prescaler_10> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y4/prescaler_6> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y4/prescaler_7> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y4/prescaler_8> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y4/prescaler_9> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y4/prescaler_10> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y4/prescaler_11> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y4/prescaler_12> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y4/prescaler_13> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y4/prescaler_14> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y4/prescaler_15> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x2/prescaler_6> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x2/prescaler_7> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x2/prescaler_8> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x2/prescaler_9> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x2/prescaler_10> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x2/prescaler_11> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x2/prescaler_12> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x2/prescaler_13> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y1/prescaler_9> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y1/prescaler_10> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y1/prescaler_11> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y1/prescaler_12> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y1/prescaler_13> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y1/prescaler_14> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y1/prescaler_15> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d1/prescaler_6> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d1/prescaler_7> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d1/prescaler_8> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d1/prescaler_9> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d1/prescaler_10> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d1/prescaler_11> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d1/prescaler_12> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d1/prescaler_13> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d1/prescaler_14> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d1/prescaler_15> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count_7> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y2/prescaler_11> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y2/prescaler_12> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y2/prescaler_13> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y2/prescaler_14> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y2/prescaler_15> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x1/prescaler_6> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x1/prescaler_7> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x1/prescaler_8> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x1/prescaler_9> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x1/prescaler_10> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x1/prescaler_11> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x1/prescaler_12> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x1/prescaler_13> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x1/prescaler_14> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x1/prescaler_15> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y1/prescaler_6> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y1/prescaler_7> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y1/prescaler_8> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <prescaler_20> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <prescaler_21> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <prescaler_22> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <prescaler_23> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x5/prescaler_6> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x5/prescaler_7> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x5/prescaler_8> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x5/prescaler_9> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x5/prescaler_10> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x5/prescaler_11> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x5/prescaler_12> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x5/prescaler_13> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x5/prescaler_14> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x5/prescaler_15> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d5/prescaler_6> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d5/prescaler_7> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d5/prescaler_8> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d5/prescaler_9> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_12_10> (without init value) has a constant value of 1 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_12_11> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_13_8> (without init value) has a constant value of 1 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_13_9> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_13_10> (without init value) has a constant value of 1 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_21_10> (without init value) has a constant value of 1 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_21_11> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_21_12> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_41_10> (without init value) has a constant value of 1 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_41_11> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_41_12> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_22_10> (without init value) has a constant value of 1 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_22_11> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_42_8> (without init value) has a constant value of 1 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_42_9> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_42_10> (without init value) has a constant value of 1 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pul_42_11> (without init value) has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <prescaler_19> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x4/prescaler_8> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x4/prescaler_9> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x4/prescaler_10> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x4/prescaler_11> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x4/prescaler_12> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x4/prescaler_13> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x4/prescaler_14> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x4/prescaler_15> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d4/prescaler_6> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d4/prescaler_7> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d4/prescaler_8> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d4/prescaler_9> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d4/prescaler_10> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d4/prescaler_11> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d4/prescaler_12> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d4/prescaler_13> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d4/prescaler_14> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d4/prescaler_15> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d5/prescaler_10> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d5/prescaler_11> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d5/prescaler_12> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d5/prescaler_13> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d5/prescaler_14> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d5/prescaler_15> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y5/prescaler_6> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y5/prescaler_7> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y5/prescaler_8> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y5/prescaler_9> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y5/prescaler_10> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y5/prescaler_11> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y5/prescaler_12> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y5/prescaler_13> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y5/prescaler_14> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y5/prescaler_15> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x4/prescaler_6> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x4/prescaler_7> has a constant value of 0 in block <hexapod>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <pul_12_7> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_12_8> 
+INFO:Xst:2261 - The FF/Latch <x5/count_0> in Unit <hexapod> is equivalent to the following 11 FFs/Latches, which will be removed : <d5/count_0> <y5/count_0> <x4/count_0> <d4/count_0> <y4/count_0> <x2/count_0> <d2/count_0> <y2/count_0> <x1/count_0> <d1/count_0> <y1/count_0> 
+INFO:Xst:2261 - The FF/Latch <d4/CTL> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <x2/CTL> 
+INFO:Xst:2261 - The FF/Latch <x5/count_1> in Unit <hexapod> is equivalent to the following 11 FFs/Latches, which will be removed : <d5/count_1> <y5/count_1> <x4/count_1> <d4/count_1> <y4/count_1> <x2/count_1> <d2/count_1> <y2/count_1> <x1/count_1> <d1/count_1> <y1/count_1> 
+INFO:Xst:2261 - The FF/Latch <x5/count_2> in Unit <hexapod> is equivalent to the following 11 FFs/Latches, which will be removed : <d5/count_2> <y5/count_2> <x4/count_2> <d4/count_2> <y4/count_2> <x2/count_2> <d2/count_2> <y2/count_2> <x1/count_2> <d1/count_2> <y1/count_2> 
+INFO:Xst:2261 - The FF/Latch <x5/count_3> in Unit <hexapod> is equivalent to the following 11 FFs/Latches, which will be removed : <d5/count_3> <y5/count_3> <x4/count_3> <d4/count_3> <y4/count_3> <x2/count_3> <d2/count_3> <y2/count_3> <x1/count_3> <d1/count_3> <y1/count_3> 
+INFO:Xst:2261 - The FF/Latch <x5/count_4> in Unit <hexapod> is equivalent to the following 11 FFs/Latches, which will be removed : <d5/count_4> <y5/count_4> <x4/count_4> <d4/count_4> <y4/count_4> <x2/count_4> <d2/count_4> <y2/count_4> <x1/count_4> <d1/count_4> <y1/count_4> 
+INFO:Xst:2261 - The FF/Latch <x5/count_5> in Unit <hexapod> is equivalent to the following 11 FFs/Latches, which will be removed : <d5/count_5> <y5/count_5> <x4/count_5> <d4/count_5> <y4/count_5> <x2/count_5> <d2/count_5> <y2/count_5> <x1/count_5> <d1/count_5> <y1/count_5> 
+INFO:Xst:2261 - The FF/Latch <y4/CTL> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <y1/CTL> 
+INFO:Xst:2261 - The FF/Latch <x5/count_6> in Unit <hexapod> is equivalent to the following 11 FFs/Latches, which will be removed : <d5/count_6> <y5/count_6> <x4/count_6> <d4/count_6> <y4/count_6> <x2/count_6> <d2/count_6> <y2/count_6> <x1/count_6> <d1/count_6> <y1/count_6> 
+INFO:Xst:2261 - The FF/Latch <x5/count_7> in Unit <hexapod> is equivalent to the following 11 FFs/Latches, which will be removed : <d5/count_7> <y5/count_7> <x4/count_7> <d4/count_7> <y4/count_7> <x2/count_7> <d2/count_7> <y2/count_7> <x1/count_7> <d1/count_7> <y1/count_7> 
+INFO:Xst:2261 - The FF/Latch <x5/count_8> in Unit <hexapod> is equivalent to the following 11 FFs/Latches, which will be removed : <d5/count_8> <y5/count_8> <x4/count_8> <d4/count_8> <y4/count_8> <x2/count_8> <d2/count_8> <y2/count_8> <x1/count_8> <d1/count_8> <y1/count_8> 
+INFO:Xst:2261 - The FF/Latch <x5/count_9> in Unit <hexapod> is equivalent to the following 11 FFs/Latches, which will be removed : <d5/count_9> <y5/count_9> <x4/count_9> <d4/count_9> <y4/count_9> <x2/count_9> <d2/count_9> <y2/count_9> <x1/count_9> <d1/count_9> <y1/count_9> 
+INFO:Xst:2261 - The FF/Latch <x5/CTL> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <d1/CTL> 
+INFO:Xst:2261 - The FF/Latch <d5/CTL> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <x1/CTL> 
+INFO:Xst:2261 - The FF/Latch <y5/CTL> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <y2/CTL> 
+INFO:Xst:2261 - The FF/Latch <x5/prescaler_0> in Unit <hexapod> is equivalent to the following 11 FFs/Latches, which will be removed : <d5/prescaler_0> <y5/prescaler_0> <x4/prescaler_0> <d4/prescaler_0> <y4/prescaler_0> <x2/prescaler_0> <d2/prescaler_0> <y2/prescaler_0> <x1/prescaler_0> <y1/prescaler_0> <d1/prescaler_0> 
+INFO:Xst:2261 - The FF/Latch <x5/prescaler_1> in Unit <hexapod> is equivalent to the following 11 FFs/Latches, which will be removed : <d5/prescaler_1> <y5/prescaler_1> <x4/prescaler_1> <d4/prescaler_1> <y4/prescaler_1> <x2/prescaler_1> <d2/prescaler_1> <y2/prescaler_1> <x1/prescaler_1> <y1/prescaler_1> <d1/prescaler_1> 
+INFO:Xst:2261 - The FF/Latch <x5/prescaler_2> in Unit <hexapod> is equivalent to the following 11 FFs/Latches, which will be removed : <d5/prescaler_2> <y5/prescaler_2> <x4/prescaler_2> <d4/prescaler_2> <y4/prescaler_2> <x2/prescaler_2> <d2/prescaler_2> <y2/prescaler_2> <x1/prescaler_2> <y1/prescaler_2> <d1/prescaler_2> 
+INFO:Xst:2261 - The FF/Latch <x5/prescaler_3> in Unit <hexapod> is equivalent to the following 11 FFs/Latches, which will be removed : <d5/prescaler_3> <y5/prescaler_3> <x4/prescaler_3> <d4/prescaler_3> <y4/prescaler_3> <x2/prescaler_3> <d2/prescaler_3> <y2/prescaler_3> <x1/prescaler_3> <y1/prescaler_3> <d1/prescaler_3> 
+INFO:Xst:2261 - The FF/Latch <x5/prescaler_4> in Unit <hexapod> is equivalent to the following 11 FFs/Latches, which will be removed : <d5/prescaler_4> <y5/prescaler_4> <x4/prescaler_4> <d4/prescaler_4> <y4/prescaler_4> <x2/prescaler_4> <d2/prescaler_4> <y2/prescaler_4> <x1/prescaler_4> <y1/prescaler_4> <d1/prescaler_4> 
+INFO:Xst:2261 - The FF/Latch <x5/prescaler_5> in Unit <hexapod> is equivalent to the following 11 FFs/Latches, which will be removed : <d5/prescaler_5> <y5/prescaler_5> <x4/prescaler_5> <d4/prescaler_5> <y4/prescaler_5> <x2/prescaler_5> <d2/prescaler_5> <y2/prescaler_5> <x1/prescaler_5> <y1/prescaler_5> <d1/prescaler_5> 
+INFO:Xst:2261 - The FF/Latch <pul_22_7> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <pul_22_8> 
+INFO:Xst:2261 - The FF/Latch <x5/count_10> in Unit <hexapod> is equivalent to the following 11 FFs/Latches, which will be removed : <d5/count_10> <y5/count_10> <x4/count_10> <d4/count_10> <y4/count_10> <x2/count_10> <d2/count_10> <y2/count_10> <x1/count_10> <d1/count_10> <y1/count_10> 
+INFO:Xst:2261 - The FF/Latch <x5/count_11> in Unit <hexapod> is equivalent to the following 11 FFs/Latches, which will be removed : <d5/count_11> <y5/count_11> <x4/count_11> <d4/count_11> <y4/count_11> <x2/count_11> <d2/count_11> <y2/count_11> <x1/count_11> <d1/count_11> <y1/count_11> 
+INFO:Xst:2261 - The FF/Latch <x5/count_12> in Unit <hexapod> is equivalent to the following 11 FFs/Latches, which will be removed : <d5/count_12> <y5/count_12> <x4/count_12> <d4/count_12> <y4/count_12> <x2/count_12> <d2/count_12> <y2/count_12> <x1/count_12> <d1/count_12> <y1/count_12> 
+INFO:Xst:2261 - The FF/Latch <x5/count_13> in Unit <hexapod> is equivalent to the following 11 FFs/Latches, which will be removed : <d5/count_13> <y5/count_13> <x4/count_13> <d4/count_13> <y4/count_13> <x2/count_13> <d2/count_13> <y2/count_13> <x1/count_13> <d1/count_13> <y1/count_13> 
+INFO:Xst:2261 - The FF/Latch <x5/count_14> in Unit <hexapod> is equivalent to the following 11 FFs/Latches, which will be removed : <d5/count_14> <y5/count_14> <x4/count_14> <d4/count_14> <y4/count_14> <x2/count_14> <d2/count_14> <y2/count_14> <x1/count_14> <d1/count_14> <y1/count_14> 
+INFO:Xst:2261 - The FF/Latch <x5/count_15> in Unit <hexapod> is equivalent to the following 11 FFs/Latches, which will be removed : <d5/count_15> <y5/count_15> <x4/count_15> <d4/count_15> <y4/count_15> <x2/count_15> <d2/count_15> <y2/count_15> <x1/count_15> <d1/count_15> <y1/count_15> 
+INFO:Xst:2261 - The FF/Latch <x4/CTL> in Unit <hexapod> is equivalent to the following FF/Latch, which will be removed : <d2/CTL> 
+INFO:Xst:3203 - The FF/Latch <pul_12_7> in Unit <hexapod> is the opposite to the following FF/Latch, which will be removed : <pul_12_9> 
+INFO:Xst:3203 - The FF/Latch <pul_21_8> in Unit <hexapod> is the opposite to the following FF/Latch, which will be removed : <pul_21_9> 
+INFO:Xst:3203 - The FF/Latch <pul_22_7> in Unit <hexapod> is the opposite to the following FF/Latch, which will be removed : <pul_22_9> 
+INFO:Xst:3203 - The FF/Latch <pul_41_8> in Unit <hexapod> is the opposite to the following FF/Latch, which will be removed : <pul_41_9> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block hexapod, actual ratio is 5.
+FlipFlop count_0 has been replicated 2 time(s)
+FlipFlop count_1 has been replicated 2 time(s)
+FlipFlop count_2 has been replicated 2 time(s)
+FlipFlop count_3 has been replicated 2 time(s)
+FlipFlop count_4 has been replicated 2 time(s)
+FlipFlop count_5 has been replicated 2 time(s)
+FlipFlop count_6 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 101
+ Flip-Flops                                            : 101
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : hexapod.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 446
+#      GND                         : 1
+#      INV                         : 16
+#      LUT1                        : 44
+#      LUT2                        : 42
+#      LUT3                        : 6
+#      LUT4                        : 78
+#      LUT5                        : 19
+#      LUT6                        : 92
+#      MUXCY                       : 92
+#      MUXF7                       : 7
+#      VCC                         : 1
+#      XORCY                       : 48
+# FlipFlops/Latches                : 101
+#      FD                          : 21
+#      FDCE                        : 10
+#      FDE                         : 6
+#      FDPE                        : 23
+#      FDR                         : 6
+#      FDRE                        : 35
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 22
+#      IBUF                        : 1
+#      OBUF                        : 21
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             101  out of  11440     0%  
+ Number of Slice LUTs:                  297  out of   5720     5%  
+    Number used as Logic:               297  out of   5720     5%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    303
+   Number with an unused Flip Flop:     202  out of    303    66%  
+   Number with an unused LUT:             6  out of    303     1%  
+   Number of fully used LUT-FF pairs:    95  out of    303    31%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    102    22%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 101   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 6.045ns (Maximum Frequency: 165.426MHz)
+   Minimum input arrival time before clock: 5.940ns
+   Maximum output required time after clock: 4.240ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 6.045ns (frequency: 165.426MHz)
+  Total number of paths / destination ports: 5264 / 197
+-------------------------------------------------------------------------
+Delay:               6.045ns (Levels of Logic = 5)
+  Source:            count_5_1 (FF)
+  Destination:       pul_42_4 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: count_5_1 to pul_42_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   0.834  count_5_1 (count_5_1)
+     LUT2:I0->O            3   0.250   0.766  count[7]_GND_1_o_LessThan_49_o1_SW0 (N42)
+     LUT6:I5->O           14   0.254   1.127  count[7]_GND_1_o_LessThan_49_o1_1 (count[7]_GND_1_o_LessThan_49_o1)
+     LUT6:I5->O            5   0.254   0.840  GND_1_o_count[7]_AND_3_o1 (GND_1_o_count[7]_AND_3_o)
+     MUXF7:S->O            1   0.185   0.682  pul_23[15]_GND_1_o_mux_84_OUT<4>1 (pul_23[15]_GND_1_o_mux_84_OUT<4>)
+     LUT6:I5->O            1   0.254   0.000  pul_42_4_dpot (pul_42_4_dpot)
+     FDPE:D                    0.074          pul_42_4
+    ----------------------------------------
+    Total                      6.045ns (1.796ns logic, 4.249ns route)
+                                       (29.7% logic, 70.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 113 / 92
+-------------------------------------------------------------------------
+Offset:              5.940ns (Levels of Logic = 4)
+  Source:            rst (PAD)
+  Destination:       count_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: rst to count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            36   1.328   1.863  rst_IBUF (rst_IBUF)
+     LUT4:I0->O            1   0.254   0.790  _n0306_SW0_SW0 (N50)
+     LUT6:I4->O           14   0.250   1.127  _n0306 (_n0306)
+     LUT4:I3->O            3   0.254   0.000  count_0_rstpot (count_0_rstpot)
+     FD:D                      0.074          count_0
+    ----------------------------------------
+    Total                      5.940ns (2.160ns logic, 3.780ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 18 / 18
+-------------------------------------------------------------------------
+Offset:              4.240ns (Levels of Logic = 1)
+  Source:            y4/CTL (FF)
+  Destination:       zu11 (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: y4/CTL to zu11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              4   0.525   0.803  y4/CTL (y4/CTL)
+     OBUF:I->O                 2.912          zu11_OBUF (zu11)
+    ----------------------------------------
+    Total                      4.240ns (3.437ns logic, 0.803ns route)
+                                       (81.1% logic, 18.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    6.045|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.71 secs
+ 
+--> 
+
+
+Total memory usage is 390204 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  237 (   0 filtered)
+Number of infos    :   92 (   0 filtered)
+
