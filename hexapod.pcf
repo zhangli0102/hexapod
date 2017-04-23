@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun Apr 23 11:40:27 2017
+// Written by: Map P.20131013 on Sun Apr 23 13:47:16 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -10,7 +10,7 @@ COMP "zu42" LOCATE = SITE "P87" LEVEL 1;
 COMP "zu51" LOCATE = SITE "P81" LEVEL 1;
 COMP "zu43" LOCATE = SITE "P88" LEVEL 1;
 COMP "zu52" LOCATE = SITE "P82" LEVEL 1;
-COMP "zu61" LOCATE = SITE "P50" LEVEL 1;
+COMP "zu61" LOCATE = SITE "P41" LEVEL 1;
 COMP "zu53" LOCATE = SITE "P83" LEVEL 1;
 COMP "zu62" LOCATE = SITE "P51" LEVEL 1;
 COMP "zu63" LOCATE = SITE "P40" LEVEL 1;

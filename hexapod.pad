@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sun Apr 23 11:40:34 2017
+Sun Apr 23 13:47:23 2017
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -59,7 +59,7 @@ P37|||PROGRAM_B_2||||||||||||
 P38||IOBS|IO_L65N_CSO_B_2|UNUSED||2|||||||||
 P39||IOBM|IO_L65P_INIT_B_2|UNUSED||2|||||||||
 P40|zu63|IOB|IO_L64N_D9_2|OUTPUT|LVCMOS25*|2|12|SLOW||||LOCATED|NO|NONE|
-P41||IOBM|IO_L64P_D8_2|UNUSED||2|||||||||
+P41|zu61|IOB|IO_L64P_D8_2|OUTPUT|LVCMOS25*|2|12|SLOW||||LOCATED|NO|NONE|
 P42|||VCCO_2|||2|||||2.50||||
 P43||IOBS|IO_L62N_D6_2|UNUSED||2|||||||||
 P44||IOBM|IO_L62P_D5_2|UNUSED||2|||||||||
@@ -68,7 +68,7 @@ P46||IOBM|IO_L49P_D3_2|UNUSED||2|||||||||
 P47||IOBS|IO_L48N_RDWR_B_VREF_2|UNUSED||2|||||||||
 P48||IOBM|IO_L48P_D7_2|UNUSED||2|||||||||
 P49|||GND||||||||||||
-P50|zu61|IOB|IO_L31N_GCLK30_D15_2|OUTPUT|LVCMOS25*|2|12|SLOW||||LOCATED|NO|NONE|
+P50||IOBS|IO_L31N_GCLK30_D15_2|UNUSED||2|||||||||
 P51|zu62|IOB|IO_L31P_GCLK31_D14_2|OUTPUT|LVCMOS25*|2|12|SLOW||||LOCATED|NO|NONE|
 P52|||VCCINT||||||||1.2||||
 P53|||VCCAUX||||||||2.5||||

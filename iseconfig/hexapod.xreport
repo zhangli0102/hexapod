@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-04-23T11:36:10</DateModified>
+  <DateModified>2017-04-23T12:01:40</DateModified>
   <ModuleName>hexapod</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/zhangli/src/fpga/hexapod/iseconfig/hexapod.xreport</SavedFilePath>

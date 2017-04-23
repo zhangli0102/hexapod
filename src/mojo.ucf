@@ -25,6 +25,6 @@ NET "zu51" LOC = P81;
 NET "zu52" LOC = P82;
 NET "zu53" LOC = P83;
 
-NET "zu61" LOC = P50;
+NET "zu61" LOC = P41;
 NET "zu62" LOC = P51;
 NET "zu63" LOC = P40;
