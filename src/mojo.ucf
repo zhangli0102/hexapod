@@ -9,22 +9,22 @@ NET "zu11" LOC = P66;
 NET "zu12" LOC = P58;
 NET "zu13" LOC = P57;
 
-NET "zu21" LOC = P75;
-NET "zu22" LOC = P74;
-NET "zu23" LOC = P67;
+NET "zu21" LOC = P78;
+NET "zu22" LOC = P75;
+NET "zu23" LOC = P74;
 
-NET "zu31" LOC = P33;
-NET "zu32" LOC = P79;
-NET "zu33" LOC = P78;
+NET "zu31" LOC = P35;
+NET "zu32" LOC = P32;
+NET "zu33" LOC = P33;
 
 NET "zu41" LOC = P85;
 NET "zu42" LOC = P87;
 NET "zu43" LOC = P88;
 
-NET "zu51" LOC = P82;
-NET "zu52" LOC = P83;
-NET "zu53" LOC = P84;
+NET "zu51" LOC = P81;
+NET "zu52" LOC = P82;
+NET "zu53" LOC = P83;
 
 NET "zu61" LOC = P50;
-NET "zu62" LOC = P80;
-NET "zu63" LOC = P81;
+NET "zu62" LOC = P51;
+NET "zu63" LOC = P40;

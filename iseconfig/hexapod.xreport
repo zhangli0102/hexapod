@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-04-21T15:49:48</DateModified>
+  <DateModified>2017-04-23T11:36:10</DateModified>
   <ModuleName>hexapod</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/zhangli/src/fpga/hexapod/iseconfig/hexapod.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/zhangli/src/fpga/hexapod</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/zhangli/src/fpga/hexapod/</ImplementationReportsDirectory>
   <DateInitialized>2017-04-21T15:49:48</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
